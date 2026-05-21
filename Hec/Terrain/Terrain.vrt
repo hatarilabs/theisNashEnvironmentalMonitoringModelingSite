@@ -1,0 +1,32 @@
+<VRTDataset rasterXSize="400" rasterYSize="194">
+  <SRS dataAxisToSRSAxisMapping="1,2">PROJCS["WGS 84 / UTM zone 16N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-87],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32616"]]</SRS>
+  <GeoTransform>  6.9724258450000000e+05,  1.0000000000000000e+00,  0.0000000000000000e+00,  4.3458887120000003e+06,  0.0000000000000000e+00, -1.0000000000000000e+00</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">158.0234375</MDI>
+      <MDI key="STATISTICS_MEAN">150.3870491893</MDI>
+      <MDI key="STATISTICS_MINIMUM">143.7421875</MDI>
+      <MDI key="STATISTICS_STDDEV">2.9230818642314</MDI>
+    </Metadata>
+    <NoDataValue>-9999</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <Histograms>
+      <HistItem>
+        <HistMin>143.7421875</HistMin>
+        <HistMax>158.0234375</HistMax>
+        <BucketCount>256</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>12|7|5|0|8|0|2|18|8|6|6|6|10|9|12|11|13|7|7|22|17|10|12|21|21|14|14|19|30|20|18|32|27|22|46|37|42|59|97|101|109|105|138|135|144|189|286|409|317|338|250|264|209|257|264|304|360|364|418|383|370|390|450|589|633|580|602|633|618|722|945|1080|895|832|886|881|876|909|977|895|854|912|910|905|915|912|893|915|1019|1026|1143|1014|1312|1264|1295|1096|898|823|326|416|446|471|1380|653|477|507|511|573|599|528|390|309|305|392|326|261|202|142|170|92|100|76|69|45|86|77|101|85|64|94|90|91|63|135|129|235|155|180|302|283|242|227|255|191|192|179|134|201|131|274|310|270|231|259|334|326|362|348|359|318|377|261|124|348|164|110|198|198|187|229|219|272|294|265|333|342|232|358|324|354|381|265|364|424|805|951|714|622|583|454|516|387|531|481|408|414|297|207|283|246|246|152|231|288|297|282|412|303|246|348|291|351|288|321|280|345|345|180|186|135|177|120|123|93|105|87|93|118|57|90|75|39|57|45|39|51|18|0|9|0|0|0|0|12|0|9|9|16|12|9|0|12|24|9|0|24</HistCounts>
+      </HistItem>
+    </Histograms>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">Terrain.topoBath_16N.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="400" RasterYSize="194" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="400" ySize="194" />
+      <DstRect xOff="0" yOff="0" xSize="400" ySize="194" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>

@@ -1,0 +1,237 @@
+
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{float}
+
+
+\geometry{margin=25mm}
+
+% Define colors
+\definecolor{hecblue}{RGB}{0, 51, 102}
+\definecolor{lightgrey}{RGB}{245, 245, 245}
+
+% Section styling
+\titleformat{\section}{\large\bfseries\color{hecblue}}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalsize\bfseries\color{hecblue}}{\thesubsection}{1em}{}
+
+\title{\textbf{HEC-RAS 2D Dynamic River Simulation Guide}}
+\author{Technical Documentation}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This document outlines the workflow for conducting a 2D unsteady flow (dynamic) simulation in HEC-RAS using a topobathymetric GeoTIFF and known water surface elevations (heads).
+
+\section{Part 1: Setting Up the Terrain}
+Before performing hydraulic calculations, HEC-RAS requires a Digital Elevation Model (DEM) in a specific format (.hdf).
+
+\subsection{Open HEC-RAS:} 
+Create a new project.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure1.png}
+\caption{Create project}
+%\label{fig:sample1}
+\end{figure}
+
+But be careful of the unit system
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure2.png}
+\caption{Warning over the unit system}
+%\label{fig:sample1}
+\end{figure}
+
+Before importing shapefile its time to change the unit system of the project. Go to Options > Unit System (US Customary or System International).Select System International (SI): Meters, kilometers, etc.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure10a.png}
+\caption{Select Units System}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\subsection{RAS Mapper:} 
+Open the RAS Mapper tool.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure3.png}
+\caption{Ras Mapper tool}
+%\label{fig:sample1}
+\end{figure}
+
+\subsubsection{Coordinate System:} 
+Go to \textit{Project > Set Projection}. Select a Projection file (.prj) that matches your GeoTIFF's coordinate system.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure4.png}
+\caption{Set projection}
+%\label{fig:sample1}
+\end{figure}
+
+\subsubsection{Create Terrain:} 
+Right-click on \textit{Terrains} and select \textit{Create New RAS Terrain}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure5.png}
+\caption{Create New RAS Terrain}
+%\label{fig:sample1}
+\end{figure}
+
+Add your topobathymetric \texttt{.tif} file. This will convert the GeoTIFF into a HEC-RAS Terrain layer.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure6.png}
+\caption{Add your tif file}
+%\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure7.png}
+\caption{Hdf creation}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\section{Part 2: Defining the 2D Flow Area}
+
+\subsubsection{Create Geometry:} 
+In RAS Mapper, right-click \textit{Geometries} and select \textit{Add New Geometry}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure8.png}
+\caption{Add New Geometry}
+%\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure9.png}
+\caption{New Geometry Data}
+%\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure10.png}
+\caption{Manage Layer Associations}
+%\label{fig:sample1}
+\end{figure}
+
+
+\subsubsection{Import the Shapefile into a Layer} 
+You cannot simply "open" a shapefile as a geometry; you must import its features into the specific HEC-RAS layer (like the 2D Flow Area / Perimeter).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure11.png}
+\caption{Edit geometry}
+%\label{fig:sample1}
+\end{figure}
+
+\subsubsection{Create Geometry:} 
+Right-click on the specific sub-layer you want to populate (e.g., 2D Flow Areas / Perimeters).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure12.png}
+\caption{Feature Import}
+%\label{fig:sample1}
+\end{figure}
+
+Right-click the 2D area polygon and select \textit{Edit 2D Flow Area Properties}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure13.png}
+\caption{Edit 2D Flow Area Properties}
+%\label{fig:sample1}
+\end{figure}
+
+Define your cell size (e.g., 2m x 2m). Click \textit{Generate Computation Points}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure14.png}
+\caption{Edit 2D Flow Area Properties}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage 
+
+\section{Part 3: Boundary Conditions}
+Since you have "heads" (Water Surface Elevations - WSE), you will use these as boundary conditions.
+
+\subsection{Boundary Condition Lines} 
+In RAS Mapper, select the \textit{Boundary Condition Lines} layer under your Geometry.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure15.png}
+\caption{Name BC Line - Inflow}
+%\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure16.png}
+\caption{Name BC Line - Outflow}
+%\label{fig:sample1}
+\end{figure}
+
+\section{Save and upload geometry}
+
+Stop editing the geometry and then Rasmapper data save under File / Save.
+
+Also save the geometry under Save Geometry As... The geometry name is River_Base
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure17.png}
+\caption{Save Geometry}
+%\label{fig:sample1}
+\end{figure}
+
+In HecRas open Edit / Geometric Data
+
+Open the saved geometry. The geometry should appear in the Geometric Data window and the path should appear on the HEC RAS project.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure17.png}
+\caption{Open Geometry}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage 
+
+\section{Part 4: Simulation of unsteady flow}
+
+From the main HEC-RAS window, go to Edit → Unsteady Flow Data
+
+\subsection{Set Up Boundary Conditions}
+Click on the Boundary Conditions tab. You should see your boundary condition lines listed (from your geometry)
+Click on the upstream boundary condition line to select it. In the dropdown, choose Stage Hydrograph
+
+\end{document}
