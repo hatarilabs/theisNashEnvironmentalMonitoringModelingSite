@@ -193,6 +193,8 @@ In RAS Mapper, select the \textit{Boundary Condition Lines} layer under your Geo
 %\label{fig:sample1}
 \end{figure}
 
+The outflow boundary condition has to be outside the model on the downstream direction.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.80\textwidth]{Jpg/Figure16.png}
@@ -200,18 +202,33 @@ In RAS Mapper, select the \textit{Boundary Condition Lines} layer under your Geo
 %\label{fig:sample1}
 \end{figure}
 
-\section{Save and upload geometry}
+\newpage
 
-Stop editing the geometry and then Rasmapper data save under File / Save.
-
-Also save the geometry under Save Geometry As... The geometry name is River_Base
+Close the editing mode for the recomputation of the line conectivity
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.80\textwidth]{Jpg/Figure17.png}
-\caption{Save Geometry}
+\includegraphics[width=0.80\textwidth]{Jpg/Figure16a.png}
+\caption{Close editing mode}
 %\label{fig:sample1}
 \end{figure}
+
+Open attribute table of the boundary condition lines. Check that Inflow is set as Internal and Outflow is set as External.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure16b.png}
+\caption{Layer Properties of Boundary Conditions}
+%\label{fig:sample1}
+\end{figure}
+
+You can save your RAS Mapper project just in case.
+
+\newpage
+
+
+
+\section{Set up geometry in the HEC RAS project}
 
 In HecRas open Edit / Geometric Data
 
@@ -220,18 +237,138 @@ Open the saved geometry. The geometry should appear in the Geometric Data window
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.80\textwidth]{Jpg/Figure17.png}
-\caption{Open Geometry}
+\caption{Edit Geometric Data}
+%\label{fig:sample1}
+\end{figure}
+
+We open the saved geometric data to check that is ok and also to ensure that the HEC project recognizes this geometry.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure18.png}
+\caption{Open the saved geometry}
 %\label{fig:sample1}
 \end{figure}
 
 \newpage 
 
-\section{Part 4: Simulation of unsteady flow}
+Imported geometry in the HEC project.
 
-From the main HEC-RAS window, go to Edit → Unsteady Flow Data
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure19.png}
+\caption{Imported geometry in the HEC project}
+%\label{fig:sample1}
+\end{figure}
 
-\subsection{Set Up Boundary Conditions}
-Click on the Boundary Conditions tab. You should see your boundary condition lines listed (from your geometry)
-Click on the upstream boundary condition line to select it. In the dropdown, choose Stage Hydrograph
+Close the Geometric Data window and you will see that the RiverBase geometry is part of the HEC RAS project.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure20.png}
+\caption{HEC RAS project with the geometry}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\subsection{Define Unsteady Flow Data}
+
+Press the view/edit unsteady flow data bottom. You will see the following.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure21.png}
+\caption{Unsteady Flow Data}
+%\label{fig:sample1}
+\end{figure}
+
+For the Inflow boundary condition we are going to set up a flow hydrograph. Flow data is imported from a DSS file. Check the plot to see if imported correctly.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure22.png}
+\caption{Flow of Inflow Boundary Condition}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure23.png}
+\caption{Flow of Inflow Boundary Condition}
+%\label{fig:sample1}
+\end{figure}
+
+The Outflow BC will be set as Normal Depth meaning that all water that reaches the bc will leave the model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure24.png}
+\caption{Outflow BC configuration}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+Save the unsteady flow data as Unsteady1 and close. After check that the data is imported into the project.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure25.png}
+\caption{Save the unsteady flow data}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\subsection{Unsteady Flow Analysis}
+
+Now its time to create a plan that compiles the geometry and flow. On Unsteady Flow Analysis fill the following.
+For the Computation Interval we have to take into account Courant. The cross section area is around 40 m2 and flow is around 16m3, so the average velocity is 0.4m/s. If the cell size is 2 meters that means that a particle of water will take 5 seconds to cross it. Therefore the computation interval has to be smaller, we will set up to 4 seconds, otherwise we are going to have unconvergences and wrong simulations.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure26.png}
+\caption{Unsteady flow analysis}
+%\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure27.png}
+\caption{End of the unsteady flow simulations}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\subsection{Result analysis}
+
+Save the plan and open RAS Mapper. Results are already available.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure28.png}
+\caption{Depth visualization}
+%\label{fig:sample1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure29.png}
+\caption{Velocity visualization}
+%\label{fig:sample1}
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{Jpg/Figure30.png}
+\caption{Particle tracking}
+%\label{fig:sample1}
+\end{figure}
 
 \end{document}
