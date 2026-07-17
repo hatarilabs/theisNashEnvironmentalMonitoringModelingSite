@@ -52,7 +52,6 @@
       <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
       <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
       <Layer Type="StructureLayer" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
-      <Layer Type="RASBoundaryConditionLines" Checked="True" />
       <Layer Type="RASPipeNodes">
         <SymbologyByAttributeColumns Checked="True" SelectedColumn="Node Type">
           <ValueToSymbology Value="Start">
@@ -273,10 +272,10 @@
         <Layer Name="Regions" Type="RASEncroachmentPolygons" Filename=".\theisNash2.p01.hdf" />
       </Layer>
       <Layer Name="Depth" Type="RASResultsMap" Checked="True">
-        <MapParameters MapType="depth" ProfileIndex="18" ProfileName="10JAN2023 06:00:00" />
+        <MapParameters MapType="depth" ProfileIndex="2147483647" ProfileName="Max" />
       </Layer>
       <Layer Name="Velocity" Type="RASResultsMap">
-        <MapParameters MapType="velocity" ProfileIndex="18" ProfileName="10JAN2023 06:00:00" />
+        <MapParameters MapType="velocity" ProfileIndex="2147483647" ProfileName="Max" />
       </Layer>
       <Layer Name="WSE" Type="RASResultsMap">
         <MapParameters MapType="elevation" ProfileIndex="2147483647" ProfileName="Max" />

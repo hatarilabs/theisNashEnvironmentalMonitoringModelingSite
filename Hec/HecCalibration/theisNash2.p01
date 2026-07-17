@@ -1,7 +1,7 @@
 Plan Title=Plan 01
 Program Version=6.60
 Short Identifier=Plan1                                                           
-Simulation Date=16FEB2023,00:00,20FEB2023,00:00
+Simulation Date=16FEB2023,00:00,17FEB2023,08:00
 Geom File=g01
 Flow File=u01
 Subcritical Flow

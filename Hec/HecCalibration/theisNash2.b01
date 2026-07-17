@@ -19,7 +19,7 @@ theisNash2
 Plan 01
 Plan1                                                           
 Job Control Information
-  Computation Interval  = 4SEC
+  Computation Interval  = 5MIN
   Warmup Interval       =  0 
   Instantaneous Profile = 1HOUR
   Hydrograph Interval   = 1HOUR
@@ -44,12 +44,12 @@ Job Control Information
   Write DSS File        =        T
 C:\Users\saulm\Documents\GitHub\theisNashEnvironmentalMonitoringModelingSite\Hec\HecCalibration\theisNash2.dss
 Computational Time Window
-  Start Date/Time       = 15Feb2023 2400
-  End Date/Time         = 19Feb2023 2400
+  Start Date/Time       = 17Jan2023 2400
+  End Date/Time         = 31Jan2023 2400
 Initial Conditions (use restart file?)
        T
 Restart File
-..\..\Rst\theisNash2.p01.10JAN2023 0600.rst
+..\..\Rst\theisNash2.p01.18FEB2023 0800.rst
 Log File Information
        F       0       0
 Computation Level Output

@@ -1,7 +1,7 @@
 Plan Title=Plan 01
 Program Version=6.60
 Short Identifier=Plan1                                                           
-Simulation Date=10JAN2023,00:00,10JAN2023,06:00
+Simulation Date=18Jan2023,00:00,01Feb2023,00:00
 Geom File=g01
 Flow File=u01
 Subcritical Flow
@@ -30,10 +30,10 @@ Flow Ratio Min Ratio=0.5
 Flow Ratio Max Ratio=4
 Flow Ratio Max Iterations= 10 
 Flow Ratio Reference=
-Computation Interval=4SEC
+Computation Interval=5MIN
 Output Interval=1HOUR
 Instantaneous Interval=1HOUR
-Mapping Interval=20MIN
+Mapping Interval=1HOUR
 Computation Time Step Use Courant=        0
 Computation Time Step Use Time Series=    0
 Computation Time Step Max Courant=

@@ -6,7 +6,7 @@
     <Layer Name="SW1" Type="PointFeatureLayer" Checked="True" Filename=".\Features\SW1.shp" />
   </Features>
   <Geometries Checked="True" Expanded="True">
-    <Layer Name="River_Base" Type="RASGeometry" Checked="True" Expanded="True" Filename=".\theisNash2.g01.hdf">
+    <Layer Name="River_Base" Type="RASGeometry" Expanded="True" Filename=".\theisNash2.g01.hdf">
       <Layer Type="RASRiver">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="2" r0c0="River" r0c1="Reach" Position="3" Color="-16777216" FontSize="8.25" />
       </Layer>
@@ -19,11 +19,6 @@
       </Layer>
       <Layer Type="RASStorageArea">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="Name" Position="3" Color="-16777216" FontSize="8.25" />
-      </Layer>
-      <Layer Type="RASD2FlowArea" Checked="True">
-        <DataColumnGroupVisibilities>
-          <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="False" />
-        </DataColumnGroupVisibilities>
       </Layer>
       <Layer Type="MeshPerimeterLayer" Checked="True">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="Name" Position="3" Color="-16777216" FontSize="8.25" />
@@ -52,7 +47,6 @@
       <Layer Name="Rating Curve Outlets" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
       <Layer Name="Outlet Time Series" Type="VirtualGeometryFeatureLayer" ParentIdentifiers="SA/2D Connections" />
       <Layer Type="StructureLayer" UnitsRiverStation="Feet" RiverStationDecimalPlaces="0" />
-      <Layer Type="RASBoundaryConditionLines" Checked="True" />
       <Layer Type="RASPipeNodes">
         <SymbologyByAttributeColumns Checked="True" SelectedColumn="Node Type">
           <ValueToSymbology Value="Start">
@@ -272,11 +266,11 @@
         <Layer Name="Zones" Type="RASEncroachmentZones" Filename=".\theisNash2.p01.hdf" />
         <Layer Name="Regions" Type="RASEncroachmentPolygons" Filename=".\theisNash2.p01.hdf" />
       </Layer>
-      <Layer Name="Depth" Type="RASResultsMap" Checked="True">
-        <MapParameters MapType="depth" ProfileIndex="0" ProfileName="16FEB2023 00:00:00" />
+      <Layer Name="Depth" Type="RASResultsMap">
+        <MapParameters MapType="depth" ProfileIndex="13" ProfileName="16FEB2023 13:00:00" />
       </Layer>
-      <Layer Name="Velocity" Type="RASResultsMap">
-        <MapParameters MapType="velocity" ProfileIndex="0" ProfileName="16FEB2023 00:00:00" />
+      <Layer Name="Velocity" Type="RASResultsMap" Checked="True">
+        <MapParameters MapType="velocity" ProfileIndex="2147483647" ProfileName="Max" />
       </Layer>
       <Layer Name="WSE" Type="RASResultsMap">
         <MapParameters MapType="elevation" ProfileIndex="2147483647" ProfileName="Max" />

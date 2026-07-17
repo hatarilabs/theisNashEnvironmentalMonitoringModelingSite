@@ -12,9 +12,9 @@ Plan Name:     Plan 01
 Short ID:      Plan1
  
 
-Starting Time:   15Feb2023 2400
+Starting Time:   17Jan2023 2400
 
-Ending Time:     19Feb2023 2400
+Ending Time:     31Jan2023 2400
 
 
                 ################################################
@@ -25,7 +25,7 @@ Ending Time:     19Feb2023 2400
                 #                                              #
                 #          HEC-RAS 6.6 September 2024          #
                 #                                              #
-                #             06JUL26 at 11:58:46              #
+                #             15JUL26 at 18:04:25              #
                 #                                              #
                 ################################################
                 
@@ -49,22 +49,22 @@ Ending Time:     19Feb2023 2400
            *******    ************      **********      **********     ***********           *****   *************
  
  
-       Perimeter 1           19.69           21.90           7513.           7511.        0.004486    0.0000597118
+       Perimeter 1           31.82           48.13          94089.          94072.        0.001243    0.0000013206
 
 
 
                  ***  Total Volume Accounting (for the entire model) in 1000 m^3   ***
 
-Total Boundary Flux of Water In            7513.
-Total Boundary Flux of Water Out           7511.
+Total Boundary Flux of Water In           94089.
+Total Boundary Flux of Water Out          94072.
 
-Starting Volume                            19.69
-Ending Volume                              21.90
+Starting Volume                            31.82
+Ending Volume                              48.13
 
 
                              Error   Percent Error
                              *****   *************
-                          0.004486    0.0000595558
+                          0.001243    0.0000013201
 
 
 
