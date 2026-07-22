@@ -1,0 +1,157 @@
+
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+
+
+\geometry{margin=25mm}
+
+% Define colors
+\definecolor{hecblue}{RGB}{0, 51, 102}
+\definecolor{lightgrey}{RGB}{245, 245, 245}
+
+% Section styling
+\titleformat{\section}{\large\bfseries\color{hecblue}}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalsize\bfseries\color{hecblue}}{\thesubsection}{1em}{}
+
+\title{\textbf{HEC-RAS 2D Dynamic River Simulation Guide}}
+\author{Technical Documentation}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This document deads with the data preparation with Python for the main inputs of the model, that is Terrain and River Flows.
+
+\subsection{Part 1: Creating a DEM from LAZ tools}
+
+Elevation data for this example needs to be as accurate as possible, so the most reliable source are the Lidas LAZ files downloaded from the National Map: https://apps.nationalmap.gov/downloader/
+
+On a Ubuntu running on WSL install pdal 
+
+\begin{lstlisting}[style=bashdark, title={Linux Terminal Session}]
+
+# Install conda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+
+# Run the executable
+bash ~/miniconda.sh
+
+# Remove the downloaded files
+rm ~/miniconda.sh
+
+# Activate condad
+source ~/.bashrc
+
+# Check conda version
+conda --version
+
+# Install Pdal under a enviroment with conda. It is better to prevent package conflict.
+conda create --name myenv --channel conda-forge pdal gdal
+
+# List all your enviroments
+conda env list
+
+# Activate your enviroment
+conda activate myenv
+
+# Check if PDAL is installed
+pdal --version
+
+# Check if GDAL is installed
+gdal --version
+
+\end{lstlisting}
+
+Once Pdal is installed we are going to create 4 dems from the 4 laz files with scripts like these:
+
+\begin{lstlisting}[style=bashdark, title={Linux Terminal Session}]
+pdal translate Laz/USGS_LPC_OH_Statewide_Phase3_2021_B21_BS13400457.laz l1processedData/Rst/partialDem/BS13400457_16N.tif \
+  reprojection \
+  --filters.reprojection.out_srs="EPSG:32616" \
+  --writers.gdal.resolution=1.0 \
+  --writers.gdal.output_type="mean" \
+  --writers.gdal.data_type="float32" 
+
+pdal translate Laz/USGS_LPC_OH_Statewide_Phase3_2021_B21_BS13400458.laz l1processedData/Rst/partialDem/BS13400458_16N.tif \
+  reprojection \
+  --filters.reprojection.out_srs="EPSG:32616" \
+  --writers.gdal.resolution=1.0 \
+  --writers.gdal.output_type="mean" \
+  --writers.gdal.data_type="float32" 
+
+pdal translate Laz/USGS_LPC_OH_Statewide_Phase3_2021_B21_BS13410457.laz l1processedData/Rst/partialDem/BS13410457_16N.tif \
+  reprojection \
+  --filters.reprojection.out_srs="EPSG:32616" \
+  --writers.gdal.resolution=1.0 \
+  --writers.gdal.output_type="mean" \
+  --writers.gdal.data_type="float32" 
+
+pdal translate Laz/USGS_LPC_OH_Statewide_Phase3_2021_B21_BS13410458.laz l1processedData/Rst/partialDem/BS13410458_16N.tif \
+  reprojection \
+  --filters.reprojection.out_srs="EPSG:32616" \
+  --writers.gdal.resolution=1.0 \
+  --writers.gdal.output_type="mean" \
+  --writers.gdal.data_type="float32" 
+
+pdal translate Laz/USGS_LPC_OH_Statewide_Phase3_2021_B21_BS13420457.laz l1processedData/Rst/partialDem/BS13420457_16N.tif \
+  reprojection \
+  --filters.reprojection.out_srs="EPSG:32616" \
+  --writers.gdal.resolution=1.0 \
+  --writers.gdal.output_type="mean" \
+  --writers.gdal.data_type="float32" 
+
+pdal translate Laz/USGS_LPC_OH_Statewide_Phase3_2021_B21_BS13420458.laz l1processedData/Rst/partialDem/BS13420458_16N.tif \
+  reprojection \
+  --filters.reprojection.out_srs="EPSG:32616" \
+  --writers.gdal.resolution=1.0 \
+  --writers.gdal.output_type="mean" \
+  --writers.gdal.data_type="float32" 
+\end{lstlisting}
+
+You can check the resulting rasters in QGIS. 
+
+Now is time to merge all rasters and clip to model extension extended version to prevent nan values on bordes. We are going to do it with GDAL since it is faster.
+
+\begin{lstlisting}[style=bashdark, title={Linux Terminal Session}]
+gdalwarp \
+  -wo CUTLINE_ALL_TOUCHED=TRUE \
+  -cutline l1processedData/Shp/Model/aoiExtended.shp \
+  -crop_to_cutline \
+  -dstnodata -9999 \
+  l1processedData/Rst/partialDem/BS13400457_16N.tif \
+  l1processedData/Rst/partialDem/BS13400458_16N.tif \
+  l1processedData/Rst/partialDem/BS13410457_16N.tif \
+  l1processedData/Rst/partialDem/BS13410458_16N.tif \
+  l1processedData/Rst/partialDem/BS13420457_16N.tif \
+  l1processedData/Rst/partialDem/BS13420458_16N.tif \
+  l1processedData/Rst/partialDem/OHIO_2021_16N_feet.tif
+\end{lstlisting}
+
+But the dem is still on feet, we have to shift it to meters
+
+\begin{lstlisting}[style=bashdark, title={Linux Terminal Session}]
+gdal_translate \
+  -ot Float32 \
+  -scale 0 1 0 0.3048 \
+  -co "COMPRESS=DEFLATE" \
+  l1processedData/Rst/partialDem/OHIO_2021_16N_feet.tif l1processedData/Rst/OHIO_2021_16N_m.tif
+\end{lstlisting}
+
+\section{Part 1: Creating the Topobathymetric map}
+
+
+
+\end{document}
+apt i
