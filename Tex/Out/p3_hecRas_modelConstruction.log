@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.11)  3 AUG 2026 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.11)  3 AUG 2026 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,11 +387,11 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<Jpg/Workflow/Figure1.png, id=4, 638.98724pt x 339.06676pt>
-File: Jpg/Workflow/Figure1.png Graphic file (type png)
-<use Jpg/Workflow/Figure1.png>
-Package pdftex.def Info: Jpg/Workflow/Figure1.png  used on input line 44.
-(pdftex.def)             Requested size: 364.19667pt x 193.25453pt.
+<Jpg/Workflow/Figure1a.png, id=4, 778.107pt x 467.94826pt>
+File: Jpg/Workflow/Figure1a.png Graphic file (type png)
+<use Jpg/Workflow/Figure1a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure1a.png  used on input line 44.
+(pdftex.def)             Requested size: 364.19667pt x 219.02174pt.
 <Jpg/Workflow/Figure2.png, id=6, 304.7385pt x 152.36925pt>
 File: Jpg/Workflow/Figure2.png Graphic file (type png)
 <use Jpg/Workflow/Figure2.png>
@@ -406,7 +406,7 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.56 
-      <./Jpg/Workflow/Figure1.png>]
+      <./Jpg/Workflow/Figure1a.png>]
 <Jpg/Workflow/Figure10a.png, id=19, 630.55576pt x 202.95825pt>
 File: Jpg/Workflow/Figure10a.png Graphic file (type png)
 <use Jpg/Workflow/Figure10a.png>
@@ -430,11 +430,11 @@ File: Jpg/Workflow/Figure3.png Graphic file (type png)
 <use Jpg/Workflow/Figure3.png>
 Package pdftex.def Info: Jpg/Workflow/Figure3.png  used on input line 72.
 (pdftex.def)             Requested size: 364.19667pt x 208.28377pt.
-<Jpg/Workflow/Figure4.png, id=29, 690.1785pt x 389.65575pt>
-File: Jpg/Workflow/Figure4.png Graphic file (type png)
-<use Jpg/Workflow/Figure4.png>
-Package pdftex.def Info: Jpg/Workflow/Figure4.png  used on input line 82.
-(pdftex.def)             Requested size: 364.19667pt x 205.61876pt.
+<Jpg/Workflow/Figure4a.png, id=29, 723.9045pt x 392.667pt>
+File: Jpg/Workflow/Figure4a.png Graphic file (type png)
+<use Jpg/Workflow/Figure4a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure4a.png  used on input line 82.
+(pdftex.def)             Requested size: 364.19667pt x 197.5553pt.
 <Jpg/Workflow/Figure5.png, id=30, 277.035pt x 280.79906pt>
 File: Jpg/Workflow/Figure5.png Graphic file (type png)
 <use Jpg/Workflow/Figure5.png>
@@ -453,18 +453,18 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.96 
-      <./Jpg/Workflow/Figure3.png> <./Jpg/Workflow/Figure4.png>]
+      <./Jpg/Workflow/Figure3.png> <./Jpg/Workflow/Figure4a.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<Jpg/Workflow/Figure6.png, id=43, 542.62724pt x 274.626pt>
-File: Jpg/Workflow/Figure6.png Graphic file (type png)
-<use Jpg/Workflow/Figure6.png>
-Package pdftex.def Info: Jpg/Workflow/Figure6.png  used on input line 101.
-(pdftex.def)             Requested size: 364.19667pt x 184.32112pt.
+<Jpg/Workflow/Figure6a.png, id=43, 545.03625pt x 280.04625pt>
+File: Jpg/Workflow/Figure6a.png Graphic file (type png)
+<use Jpg/Workflow/Figure6a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure6a.png  used on input line 101.
+(pdftex.def)             Requested size: 364.19667pt x 187.12576pt.
 <Jpg/Workflow/Figure7.png, id=44, 758.835pt x 433.62pt>
 File: Jpg/Workflow/Figure7.png Graphic file (type png)
 <use Jpg/Workflow/Figure7.png>
@@ -482,7 +482,7 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.112 
-       <./Jpg/Workflow/Figure5.png> <./Jpg/Workflow/Figure6.png>] [5
+       <./Jpg/Workflow/Figure5.png> <./Jpg/Workflow/Figure6a.png>] [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -496,299 +496,311 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 <Jpg/Workflow/Figure8.png, id=60, 532.99126pt x 301.125pt>
 File: Jpg/Workflow/Figure8.png Graphic file (type png)
 <use Jpg/Workflow/Figure8.png>
-Package pdftex.def Info: Jpg/Workflow/Figure8.png  used on input line 123.
+Package pdftex.def Info: Jpg/Workflow/Figure8.png  used on input line 122.
 (pdftex.def)             Requested size: 364.19667pt x 205.76854pt.
 <Jpg/Workflow/Figure9.png, id=61, 527.571pt x 280.04625pt>
 File: Jpg/Workflow/Figure9.png Graphic file (type png)
 <use Jpg/Workflow/Figure9.png>
-Package pdftex.def Info: Jpg/Workflow/Figure9.png  used on input line 130.
+Package pdftex.def Info: Jpg/Workflow/Figure9.png  used on input line 129.
 (pdftex.def)             Requested size: 364.19667pt x 193.32611pt.
 <Jpg/Workflow/Figure10.png, id=62, 985.88326pt x 251.13824pt>
 File: Jpg/Workflow/Figure10.png Graphic file (type png)
 <use Jpg/Workflow/Figure10.png>
-Package pdftex.def Info: Jpg/Workflow/Figure10.png  used on input line 137.
+Package pdftex.def Info: Jpg/Workflow/Figure10.png  used on input line 136.
 (pdftex.def)             Requested size: 364.19667pt x 92.77023pt.
 <Jpg/Workflow/Figure11.png, id=63, 457.71pt x 291.33844pt>
 File: Jpg/Workflow/Figure11.png Graphic file (type png)
 <use Jpg/Workflow/Figure11.png>
-Package pdftex.def Info: Jpg/Workflow/Figure11.png  used on input line 148.
+Package pdftex.def Info: Jpg/Workflow/Figure11.png  used on input line 147.
 (pdftex.def)             Requested size: 364.19667pt x 231.82632pt.
 [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 \end{figure}
+l.150 \end{figure}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 \end{figure}
+l.150 \end{figure}
                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 \end{figure}
+l.150 \end{figure}
                    <./Jpg/Workflow/Figure8.png> <./Jpg/Workflow/Figure9.png> <.
 /Jpg/Workflow/Figure10.png>]
-<Jpg/Workflow/Figure12.png, id=77, 952.15726pt x 519.1395pt>
-File: Jpg/Workflow/Figure12.png Graphic file (type png)
-<use Jpg/Workflow/Figure12.png>
-Package pdftex.def Info: Jpg/Workflow/Figure12.png  used on input line 158.
-(pdftex.def)             Requested size: 364.19667pt x 198.57416pt.
-<Jpg/Workflow/Figure13.png, id=78, 1084.05pt x 589.4522pt>
-File: Jpg/Workflow/Figure13.png Graphic file (type png)
-<use Jpg/Workflow/Figure13.png>
-Package pdftex.def Info: Jpg/Workflow/Figure13.png  used on input line 167.
-(pdftex.def)             Requested size: 364.19667pt x 198.0276pt.
+<Jpg/Workflow/Figure12a.png, id=77, 434.37282pt x 392.21532pt>
+File: Jpg/Workflow/Figure12a.png Graphic file (type png)
+<use Jpg/Workflow/Figure12a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure12a.png  used on input line 157.
+(pdftex.def)             Requested size: 364.19667pt x 328.86613pt.
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.171 
-      
+l.161 
+       <./Jpg/Workflow/Figure11.png>]
+<Jpg/Workflow/Figure12b.png, id=86, 657.657pt x 445.665pt>
+File: Jpg/Workflow/Figure12b.png Graphic file (type png)
+<use Jpg/Workflow/Figure12b.png>
+Package pdftex.def Info: Jpg/Workflow/Figure12b.png  used on input line 164.
+(pdftex.def)             Requested size: 364.19667pt x 246.80977pt.
+<Jpg/Workflow/Figure13.png, id=87, 1084.05pt x 589.4522pt>
+File: Jpg/Workflow/Figure13.png Graphic file (type png)
+<use Jpg/Workflow/Figure13.png>
+Package pdftex.def Info: Jpg/Workflow/Figure13.png  used on input line 173.
+(pdftex.def)             Requested size: 364.19667pt x 198.0276pt.
+ [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.171 
-       <./Jpg/Workflow/Figure11.png> <./Jpg/Workflow/Figure12.png>]
-<Jpg/Workflow/Figure14.png, id=89, 373.99725pt x 319.79475pt>
-File: Jpg/Workflow/Figure14.png Graphic file (type png)
-<use Jpg/Workflow/Figure14.png>
-Package pdftex.def Info: Jpg/Workflow/Figure14.png  used on input line 176.
-(pdftex.def)             Requested size: 364.19667pt x 311.43507pt.
- [8
+l.177 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.181 \newpage
-              
+l.177 
+       <./Jpg/Workflow/Figure12a.png> <./Jpg/Workflow/Figure12b.png>]
+<Jpg/Workflow/Figure14a.png, id=96, 373.99725pt x 334.851pt>
+File: Jpg/Workflow/Figure14a.png Graphic file (type png)
+<use Jpg/Workflow/Figure14a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure14a.png  used on input line 182.
+(pdftex.def)             Requested size: 364.19667pt x 326.09775pt.
+ [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.181 \newpage
-               <./Jpg/Workflow/Figure13.png> <./Jpg/Workflow/Figure14.png>]
-<Jpg/Workflow/Figure15.png, id=98, 822.6735pt x 437.2335pt>
-File: Jpg/Workflow/Figure15.png Graphic file (type png)
-<use Jpg/Workflow/Figure15.png>
-Package pdftex.def Info: Jpg/Workflow/Figure15.png  used on input line 191.
-(pdftex.def)             Requested size: 364.19667pt x 193.56421pt.
-<Jpg/Workflow/Figure16.png, id=99, 606.46574pt x 473.97075pt>
-File: Jpg/Workflow/Figure16.png Graphic file (type png)
-<use Jpg/Workflow/Figure16.png>
-Package pdftex.def Info: Jpg/Workflow/Figure16.png  used on input line 200.
-(pdftex.def)             Requested size: 364.19667pt x 284.63777pt.
-
-[9
+l.187 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.205 \newpage
-              
+l.187 \newpage
+               <./Jpg/Workflow/Figure13.png> <./Jpg/Workflow/Figure14a.png>]
+<Jpg/Workflow/Figure15.png, id=105, 822.6735pt x 437.2335pt>
+File: Jpg/Workflow/Figure15.png Graphic file (type png)
+<use Jpg/Workflow/Figure15.png>
+Package pdftex.def Info: Jpg/Workflow/Figure15.png  used on input line 197.
+(pdftex.def)             Requested size: 364.19667pt x 193.56421pt.
+<Jpg/Workflow/Figure16.png, id=106, 606.46574pt x 473.97075pt>
+File: Jpg/Workflow/Figure16.png Graphic file (type png)
+<use Jpg/Workflow/Figure16.png>
+Package pdftex.def Info: Jpg/Workflow/Figure16.png  used on input line 206.
+(pdftex.def)             Requested size: 364.19667pt x 284.63777pt.
+
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.205 \newpage
-               <./Jpg/Workflow/Figure15.png> <./Jpg/Workflow/Figure16.png>]
-<Jpg/Workflow/Figure16a.png, id=110, 391.4625pt x 454.69875pt>
-File: Jpg/Workflow/Figure16a.png Graphic file (type png)
-<use Jpg/Workflow/Figure16a.png>
-Package pdftex.def Info: Jpg/Workflow/Figure16a.png  used on input line 211.
-(pdftex.def)             Requested size: 364.19667pt x 423.0528pt.
-<Jpg/Workflow/Figure16b.png, id=111, 537.207pt x 284.262pt>
-File: Jpg/Workflow/Figure16b.png Graphic file (type png)
-<use Jpg/Workflow/Figure16b.png>
-Package pdftex.def Info: Jpg/Workflow/Figure16b.png  used on input line 220.
-(pdftex.def)             Requested size: 364.19667pt x 192.7187pt.
-
-[10
+l.211 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.224 
-       <./Jpg/Workflow/Figure16a.png>] [11
+l.211 \newpage
+               <./Jpg/Workflow/Figure15.png> <./Jpg/Workflow/Figure16.png>]
+<Jpg/Workflow/Figure16a.png, id=117, 391.4625pt x 454.69875pt>
+File: Jpg/Workflow/Figure16a.png Graphic file (type png)
+<use Jpg/Workflow/Figure16a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure16a.png  used on input line 217.
+(pdftex.def)             Requested size: 364.19667pt x 423.0528pt.
+<Jpg/Workflow/Figure16b.png, id=118, 537.207pt x 284.262pt>
+File: Jpg/Workflow/Figure16b.png Graphic file (type png)
+<use Jpg/Workflow/Figure16b.png>
+Package pdftex.def Info: Jpg/Workflow/Figure16b.png  used on input line 226.
+(pdftex.def)             Requested size: 364.19667pt x 192.7187pt.
+
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.227 \newpage
-               <./Jpg/Workflow/Figure16b.png>]
-<Jpg/Workflow/Figure17.png, id=124, 791.95876pt x 234.1247pt>
-File: Jpg/Workflow/Figure17.png Graphic file (type png)
-<use Jpg/Workflow/Figure17.png>
-Package pdftex.def Info: Jpg/Workflow/Figure17.png  used on input line 239.
-(pdftex.def)             Requested size: 364.19667pt x 107.6665pt.
-<Jpg/Workflow/Figure18.png, id=125, 767.86874pt x 517.18219pt>
-File: Jpg/Workflow/Figure18.png Graphic file (type png)
-<use Jpg/Workflow/Figure18.png>
-Package pdftex.def Info: Jpg/Workflow/Figure18.png  used on input line 248.
-(pdftex.def)             Requested size: 364.19667pt x 245.30107pt.
- [12
+l.230 
+       <./Jpg/Workflow/Figure16a.png>] [12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.253 \newpage
-              
+l.233 \newpage
+               <./Jpg/Workflow/Figure16b.png>]
+<Jpg/Workflow/Figure17.png, id=131, 791.95876pt x 234.1247pt>
+File: Jpg/Workflow/Figure17.png Graphic file (type png)
+<use Jpg/Workflow/Figure17.png>
+Package pdftex.def Info: Jpg/Workflow/Figure17.png  used on input line 245.
+(pdftex.def)             Requested size: 364.19667pt x 107.6665pt.
+<Jpg/Workflow/Figure18.png, id=132, 767.86874pt x 517.18219pt>
+File: Jpg/Workflow/Figure18.png Graphic file (type png)
+<use Jpg/Workflow/Figure18.png>
+Package pdftex.def Info: Jpg/Workflow/Figure18.png  used on input line 254.
+(pdftex.def)             Requested size: 364.19667pt x 245.30107pt.
+ [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.253 \newpage
-               <./Jpg/Workflow/Figure17.png> <./Jpg/Workflow/Figure18.png>]
-<Jpg/Workflow/Figure19.png, id=135, 1043.69925pt x 540.21825pt>
-File: Jpg/Workflow/Figure19.png Graphic file (type png)
-<use Jpg/Workflow/Figure19.png>
-Package pdftex.def Info: Jpg/Workflow/Figure19.png  used on input line 259.
-(pdftex.def)             Requested size: 364.19667pt x 188.5022pt.
-<Jpg/Workflow/Figure20.png, id=136, 635.976pt x 163.812pt>
-File: Jpg/Workflow/Figure20.png Graphic file (type png)
-<use Jpg/Workflow/Figure20.png>
-Package pdftex.def Info: Jpg/Workflow/Figure20.png  used on input line 268.
-(pdftex.def)             Requested size: 364.19667pt x 93.80872pt.
-
-[13
+l.259 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 \newpage
-              
+l.259 \newpage
+               <./Jpg/Workflow/Figure17.png> <./Jpg/Workflow/Figure18.png>]
+<Jpg/Workflow/Figure19.png, id=143, 1043.69925pt x 540.21825pt>
+File: Jpg/Workflow/Figure19.png Graphic file (type png)
+<use Jpg/Workflow/Figure19.png>
+Package pdftex.def Info: Jpg/Workflow/Figure19.png  used on input line 265.
+(pdftex.def)             Requested size: 364.19667pt x 188.5022pt.
+<Jpg/Workflow/Figure20.png, id=144, 635.976pt x 163.812pt>
+File: Jpg/Workflow/Figure20.png Graphic file (type png)
+<use Jpg/Workflow/Figure20.png>
+Package pdftex.def Info: Jpg/Workflow/Figure20.png  used on input line 274.
+(pdftex.def)             Requested size: 364.19667pt x 93.80872pt.
+
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 \newpage
-               <./Jpg/Workflow/Figure19.png> <./Jpg/Workflow/Figure20.png>]
-<Jpg/Workflow/Figure21.png, id=146, 608.87476pt x 332.442pt>
-File: Jpg/Workflow/Figure21.png Graphic file (type png)
-<use Jpg/Workflow/Figure21.png>
-Package pdftex.def Info: Jpg/Workflow/Figure21.png  used on input line 281.
-(pdftex.def)             Requested size: 364.19667pt x 198.85802pt.
-<Jpg/Workflow/Figure22.png, id=147, 897.3525pt x 461.92575pt>
-File: Jpg/Workflow/Figure22.png Graphic file (type png)
-<use Jpg/Workflow/Figure22.png>
-Package pdftex.def Info: Jpg/Workflow/Figure22.png  used on input line 290.
-(pdftex.def)             Requested size: 364.19667pt x 187.47362pt.
-
-[14
+l.279 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.295 \newpage
-              
+l.279 \newpage
+               <./Jpg/Workflow/Figure19.png> <./Jpg/Workflow/Figure20.png>]
+<Jpg/Workflow/Figure21.png, id=153, 608.87476pt x 332.442pt>
+File: Jpg/Workflow/Figure21.png Graphic file (type png)
+<use Jpg/Workflow/Figure21.png>
+Package pdftex.def Info: Jpg/Workflow/Figure21.png  used on input line 287.
+(pdftex.def)             Requested size: 364.19667pt x 198.85802pt.
+<Jpg/Workflow/Figure22.png, id=154, 897.3525pt x 461.92575pt>
+File: Jpg/Workflow/Figure22.png Graphic file (type png)
+<use Jpg/Workflow/Figure22.png>
+Package pdftex.def Info: Jpg/Workflow/Figure22.png  used on input line 296.
+(pdftex.def)             Requested size: 364.19667pt x 187.47362pt.
+
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.295 \newpage
-               <./Jpg/Workflow/Figure21.png> <./Jpg/Workflow/Figure22.png>]
-<Jpg/Workflow/Figure23.png, id=157, 738.3585pt x 416.757pt>
-File: Jpg/Workflow/Figure23.png Graphic file (type png)
-<use Jpg/Workflow/Figure23.png>
-Package pdftex.def Info: Jpg/Workflow/Figure23.png  used on input line 299.
-(pdftex.def)             Requested size: 364.19667pt x 205.56721pt.
-<Jpg/Workflow/Figure24.png, id=158, 663.6795pt x 356.532pt>
-File: Jpg/Workflow/Figure24.png Graphic file (type png)
-<use Jpg/Workflow/Figure24.png>
-Package pdftex.def Info: Jpg/Workflow/Figure24.png  used on input line 308.
-(pdftex.def)             Requested size: 364.19667pt x 195.65253pt.
-
-[15
+l.301 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.313 \newpage
-              
+l.301 \newpage
+               <./Jpg/Workflow/Figure21.png> <./Jpg/Workflow/Figure22.png>]
+<Jpg/Workflow/Figure23a.png, id=164, 979.86075pt x 555.2745pt>
+File: Jpg/Workflow/Figure23a.png Graphic file (type png)
+<use Jpg/Workflow/Figure23a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure23a.png  used on input line 305.
+(pdftex.def)             Requested size: 364.19667pt x 206.38036pt.
+<Jpg/Workflow/Figure24a.png, id=165, 440.847pt x 320.397pt>
+File: Jpg/Workflow/Figure24a.png Graphic file (type png)
+<use Jpg/Workflow/Figure24a.png>
+Package pdftex.def Info: Jpg/Workflow/Figure24a.png  used on input line 314.
+(pdftex.def)             Requested size: 364.19667pt x 264.68767pt.
+
+[16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.27}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.313 \newpage
-               <./Jpg/Workflow/Figure23.png> <./Jpg/Workflow/Figure24.png>]
-<Jpg/Workflow/Figure25.png, id=167, 549.55313pt x 386.19281pt>
-File: Jpg/Workflow/Figure25.png Graphic file (type png)
-<use Jpg/Workflow/Figure25.png>
-Package pdftex.def Info: Jpg/Workflow/Figure25.png  used on input line 319.
-(pdftex.def)             Requested size: 364.19667pt x 255.94284pt.
-
-[16
+l.319 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.28}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.324 \newpage
-               <./Jpg/Workflow/Figure25.png>]
-<Jpg/Workflow/Figure26.png, id=174, 787.14075pt x 347.49825pt>
-File: Jpg/Workflow/Figure26.png Graphic file (type png)
-<use Jpg/Workflow/Figure26.png>
-Package pdftex.def Info: Jpg/Workflow/Figure26.png  used on input line 333.
-(pdftex.def)             Requested size: 364.19667pt x 160.78433pt.
-<Jpg/Workflow/Figure27.png, id=175, 555.2745pt x 528.17325pt>
-File: Jpg/Workflow/Figure27.png Graphic file (type png)
-<use Jpg/Workflow/Figure27.png>
-Package pdftex.def Info: Jpg/Workflow/Figure27.png  used on input line 340.
-(pdftex.def)             Requested size: 364.19667pt x 346.43553pt.
- [17
+l.319 \newpage
+               <./Jpg/Workflow/Figure23a.png> <./Jpg/Workflow/Figure24a.png>]
+<Jpg/Workflow/Figure25.png, id=174, 549.55313pt x 386.19281pt>
+File: Jpg/Workflow/Figure25.png Graphic file (type png)
+<use Jpg/Workflow/Figure25.png>
+Package pdftex.def Info: Jpg/Workflow/Figure25.png  used on input line 325.
+(pdftex.def)             Requested size: 364.19667pt x 255.94284pt.
+
+[17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.29}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.345 \newpage
-              
+l.330 \newpage
+               <./Jpg/Workflow/Figure25.png>]
+<Jpg/Workflow/Figure26.png, id=181, 787.14075pt x 347.49825pt>
+File: Jpg/Workflow/Figure26.png Graphic file (type png)
+<use Jpg/Workflow/Figure26.png>
+Package pdftex.def Info: Jpg/Workflow/Figure26.png  used on input line 339.
+(pdftex.def)             Requested size: 364.19667pt x 160.78433pt.
+<Jpg/Workflow/Figure27.png, id=182, 555.2745pt x 528.17325pt>
+File: Jpg/Workflow/Figure27.png Graphic file (type png)
+<use Jpg/Workflow/Figure27.png>
+Package pdftex.def Info: Jpg/Workflow/Figure27.png  used on input line 346.
+(pdftex.def)             Requested size: 364.19667pt x 346.43553pt.
+ [18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.30}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.345 \newpage
-               <./Jpg/Workflow/Figure26.png> <./Jpg/Workflow/Figure27.png>]
-<Jpg/Workflow/Figure28.png, id=185, 1150.89975pt x 608.2725pt>
-File: Jpg/Workflow/Figure28.png Graphic file (type png)
-<use Jpg/Workflow/Figure28.png>
-Package pdftex.def Info: Jpg/Workflow/Figure28.png  used on input line 353.
-(pdftex.def)             Requested size: 364.19667pt x 192.47931pt.
-<Jpg/Workflow/Figure29.png, id=186, 1155.1155pt x 648.62325pt>
-File: Jpg/Workflow/Figure29.png Graphic file (type png)
-<use Jpg/Workflow/Figure29.png>
-Package pdftex.def Info: Jpg/Workflow/Figure29.png  used on input line 360.
-(pdftex.def)             Requested size: 364.19667pt x 204.50545pt.
-
-[18
+l.351 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.31}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.365 \newpage
-              
+l.351 \newpage
+               <./Jpg/Workflow/Figure26.png> <./Jpg/Workflow/Figure27.png>]
+<Jpg/Workflow/Figure28.png, id=193, 1150.89975pt x 608.2725pt>
+File: Jpg/Workflow/Figure28.png Graphic file (type png)
+<use Jpg/Workflow/Figure28.png>
+Package pdftex.def Info: Jpg/Workflow/Figure28.png  used on input line 359.
+(pdftex.def)             Requested size: 364.19667pt x 192.47931pt.
+<Jpg/Workflow/Figure29.png, id=194, 1155.1155pt x 648.62325pt>
+File: Jpg/Workflow/Figure29.png Graphic file (type png)
+<use Jpg/Workflow/Figure29.png>
+Package pdftex.def Info: Jpg/Workflow/Figure29.png  used on input line 366.
+(pdftex.def)             Requested size: 364.19667pt x 204.50545pt.
+
+[19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.32}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.365 \newpage
-               <./Jpg/Workflow/Figure28.png> <./Jpg/Workflow/Figure29.png>]
-<Jpg/Workflow/Figure30.png, id=197, 1155.1155pt x 647.41875pt>
-File: Jpg/Workflow/Figure30.png Graphic file (type png)
-<use Jpg/Workflow/Figure30.png>
-Package pdftex.def Info: Jpg/Workflow/Figure30.png  used on input line 369.
-(pdftex.def)             Requested size: 364.19667pt x 204.12567pt.
-
-[19
+l.371 \newpage
+              
 pdfTeX warning (ext4): destination with the same identifier (name{figure.33}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.374 \end{document}
+l.371 \newpage
+               <./Jpg/Workflow/Figure28.png> <./Jpg/Workflow/Figure29.png>]
+<Jpg/Workflow/Figure30.png, id=205, 1155.1155pt x 647.41875pt>
+File: Jpg/Workflow/Figure30.png Graphic file (type png)
+<use Jpg/Workflow/Figure30.png>
+Package pdftex.def Info: Jpg/Workflow/Figure30.png  used on input line 375.
+(pdftex.def)             Requested size: 364.19667pt x 204.12567pt.
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.34}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.380 \end{document}
                      <./Jpg/Workflow/Figure30.png>]
 (Out/p3_hecRas_modelConstruction.aux)
  ***********
@@ -807,10 +819,10 @@ Package rerunfilecheck Info: Checksums for `p3_hecRas_modelConstruction.out':
 (rerunfilecheck)             After:  DF27C6576EF7BC1D96AC45B311917FE3;2764.
  ) 
 Here is how much of TeX's memory you used:
- 10723 strings out of 474222
- 168121 string characters out of 5748733
+ 10732 strings out of 474222
+ 168416 string characters out of 5748733
  1928975 words of memory out of 5000000
- 32780 multiletter control sequences out of 15000+600000
+ 32787 multiletter control sequences out of 15000+600000
  575165 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,449b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -818,11 +830,11 @@ Here is how much of TeX's memory you used:
 e/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on Out/p3_hecRas_modelConstruction.pdf (19 pages, 11459807 bytes
+Output written on Out/p3_hecRas_modelConstruction.pdf (20 pages, 11383656 bytes
 ).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 69 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

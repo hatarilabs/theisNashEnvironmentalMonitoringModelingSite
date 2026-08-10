@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QAQC NumPoints="30" UseText="0">
+  <QAQC Data="BT Status" Poor="2" Marginal="3" Enabled="1" Icon="" Id="32977"/>
+  <QAQC Data="WT Status" Poor="50" Marginal="90" Enabled="1" Icon="" Id="32978"/>
+  <QAQC Data="Depth Status" Poor="0" Marginal="1" Enabled="1" Icon="" Id="32979"/>
+  <QAQC Data="Ambiguity Ratio" Poor="90" Marginal="70" Enabled="1" Icon="" Id="32980"/>
+  <QAQC Data="Boat Speed (Ref: BT)" Poor="2" Marginal="1" Enabled="0" Icon="" Id="32869"/>
+  <QAQC Data="Nmb. Bad Ensembles (Ref: BT)" Poor="10" Marginal="5" Enabled="0" Icon="" Id="32861"/>
+  <QAQC Data="Max. Water Speed (Ref: BT)" Poor="2" Marginal="1" Enabled="0" Icon="" Id="32975"/>
+  <QAQC Data="Elapsed Time" Poor="90" Marginal="180" Enabled="1" Icon="" Id="32832"/>
+  <QAQC Data="Delta Time" Poor="2" Marginal="1" Enabled="0" Icon="" Id="32863"/>
+  <QAQC Data="Pitch" Poor="5" Marginal="1" Enabled="1" Icon="" Id="32864"/>
+  <QAQC Data="Roll" Poor="5" Marginal="1" Enabled="1" Icon="" Id="32865"/>
+  <QAQC Data="Boat/Water Ratio (Ref: BT)" Poor="2" Marginal="1" Enabled="1" Icon="" Id="32974"/>
+  <QAQC Data="Percent Good Bins (Ref: BT)" Poor="80" Marginal="90" Enabled="0" Icon="" Id="32973"/>
+  <QAQC Data="Standard Deviation Flow Direction (Ref:BT)" Poor="5" Marginal="1" Enabled="0" Icon="" Id="32948"/>
+  <QAQC Data="Voltage" Poor="9" Marginal="10" Enabled="1" Icon="" Id="32969"/>
+  <QAQC Data="Beam Separation" Poor="15" Marginal="7.5" Enabled="1" Icon="" Id="32976"/>
+</QAQC>
+
