@@ -1,0 +1,42 @@
+
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{mathpazo}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+
+
+\geometry{margin=25mm}
+
+% Define colors
+\definecolor{hecblue}{RGB}{0, 51, 102}
+\definecolor{lightgrey}{RGB}{245, 245, 245}
+
+% Section styling
+\titleformat{\section}{\large\bfseries\color{hecblue}}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalsize\bfseries\color{hecblue}}{\thesubsection}{1em}{}
+
+\title{\textbf{HEC-RAS 2D Dynamic River Simulation Guide}}
+\author{Technical Documentation}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Calculate the Manning Flow}
+
+Follow the code in s2calculateManningFlow.ipynb
+
+\section{Create the DSS file}
+
+Follow the code in s3xlsToDss.ipynb
+
+\end{document}

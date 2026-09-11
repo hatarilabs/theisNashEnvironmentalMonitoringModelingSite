@@ -1,0 +1,12 @@
+<OGRVRTDataSource>
+    <OGRVRTLayer name="points">
+        <SrcDataSource relativeToVRT="1">CSV:2022-08-19-UTM-25cm.xyz</SrcDataSource>
+        <SrcLayer>2022-08-19-UTM-25cm</SrcLayer>
+        <OpenOptions>
+            <OOI key="SEPARATOR">TAB</OOI>
+            <OOI key="HEADERS">NO</OOI>
+        </OpenOptions>
+        <GeometryType>wkbPoint</GeometryType>
+        <GeometryField encoding="PointFromColumns" x="field_1" y="field_2" z="field_3"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

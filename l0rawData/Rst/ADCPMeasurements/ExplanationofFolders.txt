@@ -1,0 +1,24 @@
+Folders:
+ 1. 1_0 - two depth profiles along the river flow direction from the measurements for the river channel on the left side of compound bar (middle line and the left line)
+ 2. ds_0 - depth and water flow profiels from the measurement at the downstream location (normal to the river flow direction)
+ 3. lb_l_0 - depth profile along the river flow from the measurement for the river channed on the left side of compoment (right line, near to the component bar)
+ 4. rb_0: depth and water flow profiles from the measurements for the river channel on the right side of compound bar (11 profiles are normal to the river flow direction; 2 profiles are along to the river flow direction.)
+	TL8	transect000
+	TL8.5 TRANSECT001
+	tl9 transect002
+	TL9.5 TRANSECT003
+	TL10 TRANSECT004
+	TL10.5 TRANSECT005
+	TL11 TRANSECT006
+	TL11.5 TRANSECT007
+	TL12 TRANSECT008
+	TL12.5 TRANSECT009
+	TL13 TRANSECT010
+	HU1 TRANSECT011
+	RBL1 TRANSECT012 
+ 5. temms_0: depth and water flow profiles from the measurement at the upstream location (normal to the river flow direction; temms_005 and temms_007 are completed measurements)
+
+
+
+
+

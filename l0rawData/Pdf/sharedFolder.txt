@@ -1,0 +1,11 @@
+https://mailuc-my.sharepoint.com/personal/soltanma_ucmail_uc_edu/_layouts/15/guestaccess.aspx?e=5%3AcVWoGj&at=9&share=IgBLK4W7I7BtRbj32fGEcmzAAUW-2ESMAPjG3D-FtG-JnA4
+
+
+gdal_grid -a invdistnn:power=2.0:max_points=12:radius=20:nodata=-9999 \
+          -txe 697086.0 697829.0 \
+          -tye 4345594.0 4346001.0 \
+          -tr 1.0 1.0 \
+          -zfield "field_3" \
+          -of GTiff \
+          --config GDAL_NUM_THREADS ALL_CPUS \
+          points.vrt ../Rst/auxFiles/output_1m_grid.tif
