@@ -18,7 +18,7 @@
       <Layer Type="RASStorageArea">
         <LabelFeatures Checked="True" PercentPosition="0" rows="1" cols="1" r0c0="Name" Position="3" Color="-16777216" FontSize="8.25" />
       </Layer>
-      <Layer Type="RASD2FlowArea" Checked="True">
+      <Layer Type="RASD2FlowArea" Checked="True" Expanded="True">
         <DataColumnGroupVisibilities>
           <DataColumnGroupVisibility DisplayName="Feature Parameters" IsVisible="False" />
         </DataColumnGroupVisibilities>
@@ -269,7 +269,7 @@
         <Layer Name="Regions" Type="RASEncroachmentPolygons" Filename=".\theisNash_v0a.p01.hdf" />
       </Layer>
       <Layer Name="Depth" Type="RASResultsMap" Checked="True">
-        <MapParameters MapType="depth" ProfileIndex="126" ProfileName="02JAN2023 18:00:00" />
+        <MapParameters MapType="depth" ProfileIndex="306" ProfileName="12JAN2023 06:00:00" />
       </Layer>
       <Layer Name="Velocity" Type="RASResultsMap">
         <MapParameters MapType="velocity" ProfileIndex="2147483647" ProfileName="Max" />
@@ -287,10 +287,10 @@
     </Layer>
   </Terrains>
   <CurrentView>
-    <MaxX>697666.840203313</MaxX>
-    <MinX>697110.152994864</MinX>
-    <MaxY>4345968.49926254</MaxY>
-    <MinY>4345629.19536992</MinY>
+    <MaxX>697780.895302929</MaxX>
+    <MinX>696932.416094807</MinX>
+    <MaxY>4346065.44440214</MaxY>
+    <MinY>4345535.23531471</MinY>
   </CurrentView>
   <VelocitySettings>
     <Density>1.5</Density>
